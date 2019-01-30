@@ -1,0 +1,46 @@
+body {
+    /* Accent: #ff5252 */
+    background-color: #222;
+    color: #FFF;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.accent {
+    color: #ff5252 !important;
+}
+
+.container{
+  display: grid;
+  grid-template-rows: 1fr 5fr 1fr;
+  grid-template-columns: 2fr 5fr 3fr;
+  grid-template-areas: 
+    "header header header"
+    "nav main aside"
+    "footer footer footer";
+  grid-gap: .75em;
+}
+
+header{
+    padding: 10px;
+    grid-area: header;
+}
+
+nav{
+    padding: 10px;
+    grid-area: nav;
+}
+
+main{
+    padding: 10px;
+    grid-area: main;
+}
+
+aside{
+    padding: 10px;
+    grid-area: aside;
+}
+
+footer{
+    padding: 10px;
+    grid-area: footer;
+}
